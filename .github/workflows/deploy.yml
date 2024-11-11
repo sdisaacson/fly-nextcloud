@@ -35,7 +35,7 @@ jobs:
       - name: Setup Fly
         run: |
           # Install flyctl application
-          curl -L https://fly.io/install.sh | FLYCTL_INSTALL=/usr/local sh
+          sudo curl -L https://fly.io/install.sh | FLYCTL_INSTALL=/usr/local sh
 
       - name: Deploy & Check Postgres Cluster
         run: |
